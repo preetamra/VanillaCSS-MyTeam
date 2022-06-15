@@ -1,0 +1,137 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    align-items:flex-start;
+    margin: 100px 250px 0;
+}
+
+.header>div:first-child {
+font-family: 'PT Serif';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 48px;
+letter-spacing: -0.045em;
+margin-top: -10px;
+color: #000000;
+
+}
+
+.header>div:first-child+div {
+    width: 50%;
+    text-align: left;
+}
+
+.header>div:first-child+div>div:first-child{
+    display: inline-block;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+
+text-transform: uppercase;
+margin-bottom: 10px;
+color: #000000;
+}
+
+.header>div:first-child+div>div:first-child+div {
+    width: 80%;
+    display: inline-block;
+    font-family: 'Poppins';
+    text-align: left;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+
+color: #000000;
+
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 15px 250px 0;
+
+}
+
+.first,.secound,.third{
+    position: relative;
+}
+
+
+.content>div>div:first-child{
+    position: absolute;
+    left: 190px;
+    top: 50px;
+    width: 50%;
+    font-family: 'PT Serif';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height */
+
+text-transform: uppercase;
+
+color: #000000;
+
+transform: rotate(90deg);
+}
+
+.content>div>div:nth-child(2)>img{
+    width: 238px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.content>div>div:nth-child(2)+div{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+    
+}
+
+.secound{
+    margin-top: 100px;
+}
+
+@media (max-width: 40rem) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        margin: 70px 0 35px;
+        margin-left: 5px;
+    }
+    .header>div:first-child{
+        padding-bottom: 35px;
+        font-size: 36px;
+line-height: 48px;
+letter-spacing: -0.045em;
+    }
+    
+    .content{
+        display: inline;
+        margin: 0px;
+    }
+    .content>div>div:nth-child(2)>img{
+        width: 138px;
+    }
+
+    
+    .first,.secound,.third{
+        display: inline-block;
+        width: 150px;
+    }
+}
